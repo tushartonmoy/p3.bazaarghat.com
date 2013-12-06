@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Movie Scheduler | ABC Film Festival</title>
+            <link href="files/style.css" rel="stylesheet" type="text/css">
+            
+        </head>
+        <body>
+            <div id="wrapper">
+                <div id="header">
+                    ABC Film Festival
+                    <span>Movie Scheduler</span>
+                </div>
+                <div id="info">
+                    <strong>Hello there!</strong><br>
+                    This utility lets you generate a schedule for movies you wish to watch at the film festival.<br>
+                    We have 5 screens and 15 films of duration 120 minutes each. Each screen shows 3 movies each twice a day.<br>
+                    Select the movies you wish to view and click on the <strong>Generate Schedule</strong> button.<br>
+                    The utility will then create the optimal schedule for you taking in consideration your current time and screening conflicts.<br>
+                </div>
+                <div id="status"></div>
+                <button class="selectAll">Invert Selection</button>
+                <button class="clr">Clear</button>
+                <button class="getBtn">Generate Schedule</button>
+                
+                
+                <div class="clear"></div>
+                <div id="movies" class="clearfix">                    
+                </div>
+                <div id="schedule" class="clearfix"></div>
+                <div class="clear"></div>
+                <button class="getBtn">Generate Schedule</button>
+            </div>
+            <script type="text/javascript" src="files/js/jquery.js"></script>
+            <script type="text/javascript" src="files/js/date.js"></script>
+            <script type="text/javascript" src="files/js/data.js"></script>
+            <script type="text/javascript" src="files/js/script.js"></script>
+        </body>
+    </html>

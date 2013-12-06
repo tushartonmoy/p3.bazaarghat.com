@@ -1,0 +1,192 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background: #fff url("i/bg.jpg") repeat-x fixed center top;
+    font-family:"Helvetica Nue","Arial",sans-serif;
+    font-size:16px;
+    color:#333;
+}
+#wrapper {
+    width:1000px;
+    margin:0px auto;    
+}
+
+#info {
+    background: #ffd;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 12px;
+    border:1px solid #ac9780;
+}
+#header {
+    font-size:32px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color:#222;
+    padding: 0.6em 0;
+    margin-bottom: 0.6em;
+    border-bottom: 1px solid #387bad;
+}
+
+#header span {
+    display: block;
+    font-size:18px;
+    font-style: italic;
+    color:#777;
+    font-weight: normal;
+}
+#movies {
+    float: left;
+    width:500px
+}
+#movies .movie {
+    padding: 12px 0;
+    margin:2px 0;
+    transition: 300ms;
+    cursor: pointer;
+}
+.movie:hover {
+    background: #e0d8c9;
+}
+.movie.selected {
+    background: #c9bdab;
+}
+.movie .checkbox {
+    background: transparent url("i/checkOff.png") no-repeat center -18px;
+    float: left;
+    width:60px;
+    height: 60px;
+}
+.movie .checkbox.on {
+    background: transparent url("i/checkOn.png") no-repeat center -18px;
+}
+.movie .poster {
+    float: left;
+    min-height: 160px;
+    width:160px;
+    background: #5a768d;
+}
+.movie .movieInfo {
+    float: left;
+    padding-left: 20px;    
+}
+.movieInfo .movieTitle {
+    font-size:22px;
+    text-shadow: 0px 1px 0px #fff;
+    font-family: "Open Sans","Segoe UI";
+    color:#111;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.movieInfo .movieLanguage {
+    color:#666;
+    font-size:12px;
+    float: left;
+}
+.movieInfo .movieRunTime {
+    color:#666;
+    font-size:12px;
+    padding-left: 4em;
+}
+.movieInfo .movieMeta {
+    margin:14px 0;
+    font-size: 14px;
+}
+
+.movieInfo .movieMeta {
+    color:#666;
+}
+.movieInfo .movieMeta strong {
+    color:#333;
+    text-transform: capitalize;
+}
+
+#status {
+    float: right;
+}
+
+#schedule {
+    float: left;
+    padding-left: 30px;
+    width:468px;
+}
+table#sched_table {
+    border: 1px solid #aaa;
+}
+table#sched_table tr:nth-child(2n){
+    background: #ebf5fc;
+    width: 100%;
+}
+table#sched_table tr:nth-child(2n+1) {
+    background: #fff;
+}
+table tr:last-child td {
+    border-bottom: none!;
+}
+.sched_m td,th {
+    padding: 0.5em;
+}
+td ,th{
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+td:last-child ,th:last-child{
+    border-right: none;
+}
+.sched_time {
+    
+    font-size:12px;
+    color:#666;
+}
+.sched_title {
+    font-weight: bold;
+}
+.sched_right {
+    
+}
+.sched_head {
+    font-size:22px;
+    font-weight: bold;
+    color:#000;
+    letter-spacing: -1px;
+    margin-bottom: 0.67em;
+}
+button {
+    border: none;
+    background: #5b6673;
+    cursor: pointer;
+    font-size:12px;
+    padding: 0.67em 1.68em;
+    color:#fff;
+    font-family: 'Open Sans','Segoe UI';    
+}
+button:hover {
+    background: #899fad;
+}
+button:active {
+    position: relative;
+    top:2px;
+    background: #000 !important;
+}
+.getBtn {
+    background: #0965aa;
+    font-weight: bold;
+}
+.getBtn:hover {
+    background: #f56d0a !important;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+* html .clearfix            { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.clear {
+    clear: both;
+}
